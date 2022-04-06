@@ -62,7 +62,7 @@ def getmp3(e):
 def getvideo(e):
     global recently
     global url
-    butๅ["state"] = DISABLED
+    but1["state"] = DISABLED
     ent1.set = ""
     e = url
     if len(url) > 0:
