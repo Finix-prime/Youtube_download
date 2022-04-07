@@ -67,7 +67,7 @@ def getvideo(e):
     e = url
     if len(url) > 0:
         yt = YouTube(e)
-        video = yt.streams.filter().first()
+        video = yt.streams.get_highest_resolution()
         destination = path
         yt.register_on_progress_callback(progressfuction)
         track = video.download(output_path=destination)
